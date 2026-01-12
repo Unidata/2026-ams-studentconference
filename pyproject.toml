@@ -1,0 +1,59 @@
+[project]
+authors = [
+  { name = "Drew Camron", email = "dcamron@ucar.edu" },
+  { name = "Tiffany Meyer", email = "tmeyer@ucar.edu" },
+]
+license-files = ["LICENSE*"]
+name = "2026-ams-studentconference"
+readme = "README.md"
+requires-python = ">= 3.12"
+version = "2026.01"
+
+[tool.pixi.dependencies]
+cartopy = "*"
+ipykernel = "*"
+metpy = "*"
+matplotlib = "*"
+netcdf4 = "*"
+python-awips = "*"
+siphon = "*"
+xarray = "*"
+
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-arm64", "osx-64", "win-64"]
+repository = "https://github.com/Unidata/2026-ams-studentconference"
+
+[tool.pixi.tasks]
+
+[tool.pixi.feature.test.dependencies]
+nbval = "*"
+
+[tool.pixi.feature.lab.dependencies]
+jupyter-resource-usage = "*"
+jupyterlab = "*"
+jupyterlab-git = "*"
+jupyterlab-myst = "*"
+jupytext = "*"
+
+[tool.pixi.feature.lab.tasks]
+lab = "jupyter lab"
+
+[tool.pixi.feature.book.dependencies]
+mystmd = "*"
+
+[tool.pixi.feature.book.tasks]
+
+[tool.pixi.feature.style.dependencies]
+prettier = "*"
+ruff = "*"
+taplo = "*"
+
+[tool.pixi.feature.style.tasks]
+
+
+[tool.pixi.environments]
+test = { features = ["test"] }
+lab = { features = ["lab"] }
+book = { features = ["book"] }
+style = { features = ["style"], no-default-feature = true }
