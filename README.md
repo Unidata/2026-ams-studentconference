@@ -2,10 +2,6 @@
 
 AMS Annual Meeting Student Conference Workshop
 
-### Let's talk AWIPS and MetPy!
-
-TODO
-
 ### ⌨ Getting set up
 
 For synchronous workshop learners, we have two separate ways you can participate, work ahead, and follow along.
