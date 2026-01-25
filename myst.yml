@@ -1,0 +1,26 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 4ce554d6-1b4d-4600-87cc-87f5490ae6e5
+  title: Exploring Meteorological Datasets with NSF Unidata AWIPS & MetPy
+  subtitle: AMS Student Conference Workshop
+  # description:
+  # keywords: []
+  # authors: []
+  # github:
+  # To autogenerate a Table of Contents, run "myst init --write-toc"
+  toc:
+    - file: ams-studentconference/index.md
+    - file: ams-studentconference/examples/index.md
+      children:
+        - file: ams-studentconference/examples/metpy/index.md
+          children:
+            - pattern: ams-studentconference/examples/metpy/*.ipynb
+        - file: ams-studentconference/examples/python-awips/index.md
+          children:
+            - pattern: ams-studentconference/examples/python-awips/*.ipynb
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
