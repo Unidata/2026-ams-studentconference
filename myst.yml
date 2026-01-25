@@ -11,6 +11,9 @@ project:
   # To autogenerate a Table of Contents, run "myst init --write-toc"
   toc:
     - file: ams-studentconference/index.md
+    - file: ams-studentconference/workshop/index.md
+      children:
+        - pattern: ams-studentconference/workshop/*.ipynb
     - file: ams-studentconference/examples/index.md
       children:
         - file: ams-studentconference/examples/python-awips/index.md
