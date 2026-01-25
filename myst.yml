@@ -13,12 +13,12 @@ project:
     - file: ams-studentconference/index.md
     - file: ams-studentconference/examples/index.md
       children:
-        - file: ams-studentconference/examples/metpy/index.md
-          children:
-            - pattern: ams-studentconference/examples/metpy/*.ipynb
         - file: ams-studentconference/examples/python-awips/index.md
           children:
             - pattern: ams-studentconference/examples/python-awips/*.ipynb
+        - file: ams-studentconference/examples/metpy/index.md
+          children:
+            - pattern: ams-studentconference/examples/metpy/*.ipynb
 site:
   template: book-theme
   # options:
