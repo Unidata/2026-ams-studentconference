@@ -7,7 +7,7 @@ project:
   # description:
   # keywords: []
   # authors: []
-  # github:
+  github: Unidata/2026-ams-studentconference
   # To autogenerate a Table of Contents, run "myst init --write-toc"
   toc:
     - file: ams-studentconference/index.md
