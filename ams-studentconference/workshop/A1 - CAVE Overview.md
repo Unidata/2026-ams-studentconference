@@ -1,4 +1,4 @@
-# Workshop CAVE Demonstration
+# Appendix 1: Workshop CAVE Demonstration
 
 ## Plot multiple datasets on one map (time matching) + add maps/configure
 
