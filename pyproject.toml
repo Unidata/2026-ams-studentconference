@@ -42,8 +42,9 @@ ruff = ">=0.14.13,<0.15"
 taplo = ">=0.10.0,<0.11"
 
 [tool.pixi.feature.dev.dependencies]
-sphinx-gallery = ">=0.20.0,<0.21"
 jupytext = ">=1.19.0,<1.20"
+sphinx-gallery = ">=0.20.0,<0.21"
+nbconvert = ">=7.16.6,<7.17"
 
 [tool.pixi.environments]
 default = { features = ["lab", "book", "test"]}
