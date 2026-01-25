@@ -23,6 +23,7 @@ project:
         - file: ams-studentconference/examples/metpy/index.md
           children:
             - pattern: ams-studentconference/examples/metpy/*.ipynb
+    - file: LINKS.md
 site:
   template: book-theme
   # options:
